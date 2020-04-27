@@ -7,8 +7,11 @@ The code is typical and it does not contain any language features. The test does
 ## Results
 
 MacBook Pro Mid 2014, 2.2 GHz Intel Core i7, Mojave
-- JavaScript - 4545 msec
-- Java - 8468 msec
-- C++ - 9308 msec
+
+| code       | leibniz   | montecarlo |
+|:-----------|:----------|:-----------|
+| JavaScript | 4545 msec | 50641 msec |
+| Java       | 8468 msec | 95864 msec |
+| C++        | 9308 msec |            |
 
 _(less is better)_
