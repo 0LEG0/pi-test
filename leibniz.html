@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <title>Benchmark basd on Pi calculation</title>
+    </header>
+    <body>
+        <script type="text/javascript">
+        if (confirm("Begin test?")) {
+        let pi = 4;
+        let sign = -1;
+        let start_at = Date.now();
+        for (let i = 3; i < 2147483647; i += 2) {
+            pi = pi + sign * 4 / i;
+            sign *= -1;
+        }
+        alert(pi + " consume " + (Date.now() - start_at) + " msec");
+        }
+        </script>
+    </body>
+</html>
