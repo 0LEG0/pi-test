@@ -1,4 +1,4 @@
-public class pi_leibnic {
+public class leibniz {
     public static void main(String[] args) {
         double pi = 4;
         int sign = -1;
