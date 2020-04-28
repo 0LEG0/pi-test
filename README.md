@@ -6,6 +6,7 @@ The code is typical and it does not contain any language features. The test does
 
 ## Code
 
+Java
 ```java
 public class leibniz {
     public static void main(String[] args) {
@@ -20,7 +21,7 @@ public class leibniz {
     }
 }
 ```
-
+VS JavaScript
 ```javascript
 let pi = 4;
 let sign = -1;
