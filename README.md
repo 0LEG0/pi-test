@@ -43,4 +43,12 @@ MacBook Pro Mid 2014, 2.2 GHz Intel Core i7, Mojave
 | Java       | 8468 msec | 95864 msec |
 | C++        | 9308 msec |            |
 
+MacBook Pro 2021, M1Pro (8-cores), Monterey
+
+| code       | leibniz   | montecarlo |
+|:-----------|:----------|:-----------|
+| JavaScript | 1325 msec | 48740 msec |
+| Java       | 4834 msec | 88388 msec |
+| C++        | 7074 msec |            |
+
 _(less is better)_
