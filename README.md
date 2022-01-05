@@ -49,6 +49,6 @@ MacBook Pro 2021, M1Pro (8-cores), Monterey
 |:-----------|:----------|:-----------|
 | JavaScript | 1325 msec | 48740 msec |
 | Java       | 4834 msec | 88388 msec |
-| C++        | 7074 msec |            |
+| C++        | 4834 msec |            |
 
 _(less is better)_
