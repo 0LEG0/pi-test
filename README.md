@@ -40,9 +40,11 @@ Run on MacBook Pro 2021, M1Pro (8-cores), Monterey
 |:-----------|:----------|:-----------|
 | Go         | 1008 msec | 57448 msec |
 | Node.js    | 1010 msec | 37416 msec |
-| Java       | 1018 msec | 36656* msec |
-| C++        | 3676 msec |            |
+| Java       | 1018 msec | 36656 msec* |
+| C++        | 1026 msec** | -          |
 
 _(less is better)_
 
-_(* montecarlo2.java version)_
+_(* montecarlo2.java version completes in 36656 msec, montecarlo.java - 73640 msec)_
+
+_(** binary compiled with -O2 option completes in 1026 msec, without - 3055 msec)_
