@@ -9,11 +9,11 @@ The code is typical and it does not contain any language features. The test does
 ```java
 public class leibniz {
     public static void main(String[] args) {
-        double pi = 4;
+        float pi = 4;
         int sign = -1;
         long start_at = System.currentTimeMillis();
         for (int i = 3; i < 2147483647; i += 2) {
-            pi = pi + (double) sign * 4 / i;
+            pi = pi + (float) sign * 4 / i;
             sign *= -1;
         }
         System.out.println(pi + " consume " + (System.currentTimeMillis() - start_at) + " msec");
@@ -34,21 +34,15 @@ console.log(pi + " consume " + (Date.now() - start_at) + " msec");
 
 ## Results
 
-MacBook Pro Mid 2014, 2.2 GHz Intel Core i7, Mojave
+Run on MacBook Pro 2021, M1Pro (8-cores), Monterey
 
 | code       | leibniz   | montecarlo |
 |:-----------|:----------|:-----------|
-| Node.js    | 4545 msec | 50641 msec |
-| Java       | 8468 msec | 95864 msec |
-| C++        | 9308 msec |            |
-
-MacBook Pro 2021, M1Pro (8-cores), Monterey
-
-| code       | leibniz   | montecarlo |
-|:-----------|:----------|:-----------|
-| Go         | 1008 msec | 57448 mces |
+| Go         | 1008 msec | 57448 msec |
 | Node.js    | 1010 msec | 37416 msec |
-| Java       | 3671 msec | 68548 msec |
+| Java       | 1018 msec | 36656* msec |
 | C++        | 3676 msec |            |
 
 _(less is better)_
+
+_(* montecarlo2.java version)_

@@ -13,7 +13,6 @@ public class montecarlo2 {
             y = random.nextInt(side) - 10000;
             if ((x*x + y*y) < r2) p_circle++;
         }
-        System.out.println(4 * ((double) p_circle / p_square) + " consume " + (System.currentTimeMillis() - start_at) + " msec");
+        System.out.println(4 * ((float) p_circle / p_square) + " consume " + (System.currentTimeMillis() - start_at) + " msec");
     } 
 }
-// Result: 3.141628151359795 consume 54738 msec
